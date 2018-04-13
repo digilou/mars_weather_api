@@ -4,7 +4,7 @@ The {MAAS} API is an open source REST API built to help make it easier and more 
 
 This API is built on [Django][] and [Django REST Framework][rest].
 
-Our implementation of the API is available at [marsweather.ingenology.com][api].
+The implementation of the API is no longer available at [marsweather.ingenology.com][api], but is in the process of finding a new home.
 
 
 [wikipedia]: http://en.wikipedia.org/wiki/Curiosity_(rover)
