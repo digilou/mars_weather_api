@@ -9,6 +9,10 @@ def bool_env(val):
     "True if env val set to 'True' else False"
     return os.environ.get(val, 'False') == 'True'
 
+here = lambda *x: join(normpath(dirname(__file__)), *x)
+DJANGO_ROOT = normpath(here('..'))  # path to dir that contains /mars_weather
+rel = lambda * args: os.path.join(DJANGO_ROOT, *args)  # rel to DJANGO_ROOT
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -175,13 +179,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
-here = lambda *x: join(normpath(dirname(__file__)), *x)
-DJANGO_ROOT = normpath(here('..'))  # path to dir that contains /mars_weather
-rel = lambda * args: os.path.join(DJANGO_ROOT, *args)  # rel to DJANGO_ROOT
-
-
 SITE_ID = 1
-
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
