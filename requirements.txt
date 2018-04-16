@@ -4,6 +4,7 @@ Markdown==2.3.1
 South==0.8.2
 dj-database-url==0.2.2
 django-filter==0.7
+django-heroku==*
 djangorestframework==2.3.7
 guess-language==0.2
 gunicorn==17.5
