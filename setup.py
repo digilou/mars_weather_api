@@ -11,7 +11,7 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='maasapi',
+    name='marsweather',
     version='0.1.0',
     description='MAAS API',
     long_description=readme,
